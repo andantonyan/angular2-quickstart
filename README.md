@@ -6,5 +6,5 @@ $ npm run watch
 ```
 ## run
 ```sh
-$ npm run watch
+$ npm start
 ```

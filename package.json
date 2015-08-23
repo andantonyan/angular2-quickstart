@@ -1,11 +1,26 @@
 {
   "name": "angular2-quickstart",
   "version": "1.0.0",
-  "description": "",
+  "description": "## build ```sh $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata src/*.ts ``` ## run ```sh $ cd src && http-server ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/http-server",
+    "watch": "./node_modules/.bin/tsc --watch -m commonjs -t es5 --emitDecoratorMetadata src/*.ts",
+    "postinstall": "./node_modules/.bin/tsd install"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andantonyan/angular2-quickstart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andantonyan/angular2-quickstart/issues"
+  },
+  "homepage": "https://github.com/andantonyan/angular2-quickstart#readme",
+  "dependencies": {
+    "http-server": "^0.8.0",
+    "tsd": "^0.6.3",
+    "typescript": "^1.5.3"
+  }
 }

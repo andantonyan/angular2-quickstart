@@ -2,9 +2,9 @@
 
 ## build
 ```sh
-$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata src/*.ts
+$ npm run watch
 ```
 ## run
 ```sh
-$ cd src && http-server
+$ npm run watch
 ```
